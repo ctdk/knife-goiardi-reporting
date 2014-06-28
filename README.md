@@ -1,17 +1,19 @@
 # Goiardi Knife Reporting
 
 A knife plugin for use with OpsCode Chef's reporting system, forked to handle a
-goiardi reporting extension.
+goiardi reporting extension and moved into the "goairdi" namespace to avoid
+stepping on anyone else's toes.
 
 ## Commands
-There are two basic commands `knife runs list` and `knife runs show`
+There are two basic commands `knife goiardi runs list` and `knife goiardi runs 
+show`
 
-`knife runs list` returns a listing of node runs by org or by node. To get a
-listing by org just use the basic command. To get a listing by node pass the
-optional node name parameter.
+`knife goiardi runs list` returns a listing of node runs by org or by node. To 
+get a listing by org just use the basic command. To get a listing by node pass 
+the optional node name parameter.
 
-* `knife runs list` - returns a list of all runs within the organization
-* `knife runs list bobsnode` - return a list of all runs on "bobsnode"
+* `knife goiardi runs list` - returns a list of all runs within the organization
+* `knife goiardi runs list bobsnode` - return a list of all runs on "bobsnode"
 
 These commands default to returning the last 24 hours worth of data.
 
@@ -34,10 +36,11 @@ If using this plugin with the goiardi chef server version 0.6.0 or above, there
 is a --status option that may be used as well to limit the rows returned to runs
 matching that status. Acceptable values are 'started', 'success', and 'failure'.
 
-`knife runs show` has one  parameter run id. It will return that specific run details.
+`knife goiardi runs show` has one  parameter run id. It will return that 
+specific run details.
 
-* `knife runs show bobsnode 30077269-59d0-4283-81f6-8d23cbed3a7a` - returns details
-about that specific node run
+* `knife goiardi runs show bobsnode 30077269-59d0-4283-81f6-8d23cbed3a7a` - 
+returns details about that specific node run.
 
 ## License
 
