@@ -42,6 +42,15 @@ specific run details.
 * `knife goiardi runs show bobsnode 30077269-59d0-4283-81f6-8d23cbed3a7a` - 
 returns details about that specific node run.
 
+## Installation
+
+The best way to install this plugin is with gem:
+
+    $ gem install knife-goiardi-reporting
+
+The steps at http://docs.opscode.com/plugin_knife_custom.html#install-a-plugin 
+also work.
+
 ## License
 
 Copyright 2013-2014, Chef Software 
