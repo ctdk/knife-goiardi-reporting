@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.email = "matthew@opscode.com"
   s.extra_rdoc_files = ["README.md", "LICENSE"]
   s.files = ["LICENSE", "README.md", "Rakefile", "lib/chef/knife/goiardi_runs_list.rb", "lib/chef/knife/goiardi_runs_show.rb", "lib/chef/goiardi/reporting/knife_helpers.rb", "lib/knife-goiardi-reporting/version.rb"]
-  s.homepage = "http://www.opscode.com"
+  s.homepage = "https://github.com/ctdk/knife-goiardi-reporting"
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.23"
   s.summary = "Knife plugin for Opscode Reporting"
