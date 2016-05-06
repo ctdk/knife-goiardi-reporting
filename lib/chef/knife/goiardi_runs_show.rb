@@ -37,7 +37,7 @@ class Chef
       HEADERS = {'X-Ops-Reporting-Protocol-Version' => PROTOCOL_VERSION}
 
       def run
-        rest = Chef::REST.new(Chef::Config[:chef_server_url])
+        rest = Chef::ServerAPI.new(Chef::Config[:chef_server_url])
 
         run_id = name_args[0]
 
@@ -51,7 +51,7 @@ class Chef
 
         query_string = "reports/org/runs/#{run_id}"
 
-        runs = rest.get(query_string, false, HEADERS)
+        runs = rest.get(query_string, HEADERS)
 
         output(runs)
       end
